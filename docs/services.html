@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services - Fuzion Hair and Beauty Zone</title>
+  <style>
+    /* Similar styling for consistency */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0e8e7, #cbbaba);
+      color: #4a3c3c;
+      line-height: 1.6;
+      padding-bottom: 3rem;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #b799a2cc;
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+      font-weight: 600;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      color: #4a3c3c;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #7a5a61;
+    }
+    header {
+      padding: 3rem 1rem 1rem;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #5c474a;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    ul.services-list {
+      list-style: none;
+    }
+    ul.services-list li {
+      background: #fff0f5;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(183,137,150,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    ul.services-list li:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(183,137,150,0.3);
+      background: #e6cbd4;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <header>Our Services</header>
+
+  <main>
+    <ul class="services-list">
+      <li>Haircuts & Blow-Drys</li>
+      <li>Full Head & Root Colour</li>
+      <li>Highlights (T-section, Half, Full Head)</li>
+      <li>Balayage & Toner</li>
+      <li>Olaplex & Hair Treatments</li>
+      <li>Hair Extensions & Styling</li>
+      <li>Perms & Beard Trims</li>
+    </ul>
+  </main>
+</body>
+</html>
