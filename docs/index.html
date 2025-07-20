@@ -2,145 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fuzion Hair and Beauty Zone</title>
   <style>
-    /* Basic reset */
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f0e8e7, #cbbaba);
-      color: #4a3c3c;
-      line-height: 1.6;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background: #b799a2cc;
-      backdrop-filter: blur(10px);
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      gap: 2rem;
-      font-weight: 600;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-    }
-    nav a {
-      color: #4a3c3c;
-      text-decoration: none;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #7a5a61;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f5f3 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      color: #333;
     }
     header {
-      padding: 3rem 1rem 1rem;
+      background: #fff;
+      padding: 1.5rem;
       text-align: center;
-      animation: fadeIn 1s ease forwards;
-      opacity: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-      font-family: 'Georgia', serif;
+      margin: 0;
+      font-size: 2rem;
     }
-    header p {
-      font-style: italic;
-      font-size: 1.2rem;
-      color: #7a5a61;
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1607082349560-3b76a9d1fa6b?auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
-      height: 60vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background: url('https://images.unsplash.com/photo-1607082349560-3b76a9d1fa6b?auto=format&fit=crop&w=1050&q=80') no-repeat center center/cover;
       color: #fff;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-      animation: fadeIn 2s ease forwards;
-      opacity: 0;
+      padding: 6rem 1rem;
+      text-align: center;
     }
     .hero h2 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
     .book-button {
-      background: #b799a2;
+      background: #b08ead;
       color: white;
-      padding: 0.8rem 2rem;
-      font-size: 1.2rem;
-      border-radius: 30px;
+      padding: 0.75rem 1.5rem;
       text-decoration: none;
-      box-shadow: 0 0 15px #b799a2cc;
-      transition: background-color 0.3s ease;
-    }
-    .book-button:hover {
-      background-color: #9e7a83;
-      box-shadow: 0 0 20px #9e7a83cc;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      font-size: 1rem;
+      border-radius: 30px;
     }
     section {
-      margin-bottom: 3rem;
-      animation: fadeIn 1.5s ease forwards;
-      opacity: 0;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
-    section h3 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #b799a2;
+    h3 {
+      border-bottom: 1px solid #ccc;
       padding-bottom: 0.5rem;
-      color: #5c474a;
-    }
-    #about p {
-      font-size: 1.1rem;
-      color: #6a5558;
-    }
-    #contact p {
-      font-size: 1.1rem;
-      color: #6a5558;
-    }
-    #contact a {
-      color: #b799a2;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    #contact a:hover {
-      text-decoration: underline;
+      margin-bottom: 1rem;
     }
     footer {
+      background: #eee;
       text-align: center;
       padding: 1rem;
+      margin-top: 3rem;
       font-size: 0.9rem;
-      color: #8b7c7f;
-      border-top: 1px solid #d7c6c9;
-      background: #f4e9e9;
     }
-    /* Animations */
-    @keyframes fadeIn {
-      to { opacity: 1; }
+    .product-slider {
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 3rem;
+    }
+    .product-slider-track {
+      display: inline-block;
+      animation: slide 20s linear infinite;
+    }
+    .product-slider-track img {
+      width: 150px;
+      height: auto;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <header>
     <h1>Fuzion Hair and Beauty Zone</h1>
     <p>14 High Street, Stonehouse, GL10 2NA</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="services.html">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -148,22 +102,37 @@
     <a class="book-button" href="https://www.fresha.com/a/fuzion-hair-beauty-zone-stonehouse-uk-14-high-street-owl3br4j" target="_blank">Book Now</a>
   </section>
 
-  <main>
-    <section id="about">
-      <h3>About Us</h3>
-      <p>
-        Welcome to Fuzion Hair and Beauty Zone, your local salon in the heart of Stonehouse. We’re passionate about creating beautiful hair in a relaxed, friendly atmosphere. Whether you're after a simple trim, a full colour transformation, or a luxurious hair treatment, our skilled team is here to make you feel amazing.
-      </p>
-    </section>
+  <section id="about">
+    <h3>About Us</h3>
+    <p>
+      Welcome to Fuzion Hair and Beauty Zone, your local salon in the heart of Stonehouse.
+      We’re passionate about creating beautiful hair in a relaxed, friendly atmosphere.
+      Whether you're after a simple trim, a full colour transformation, or a luxurious hair treatment,
+      our skilled team is here to make you feel amazing.
+    </p>
+  </section>
 
-    <section id="contact">
-      <h3>Contact Us</h3>
-      <p>📍 14 High Street, Stonehouse, GL10 2NA</p>
-      <p>📞 Call or message through our <a href="https://www.fresha.com/a/fuzion-hair-beauty-zone-stonehouse-uk-14-high-street-owl3br4j" target="_blank">Fresha page</a>.</p>
-      <p>📱 Follow us on Instagram, Facebook, TikTok</p>
-    </section>
-  </main>
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <p>
+      📍 14 High Street, Stonehouse, GL10 2NA<br>
+      📞 Call us or message through our <a href="https://www.fresha.com/a/fuzion-hair-beauty-zone-stonehouse-uk-14-high-street-owl3br4j" target="_blank">Fresha page</a>.<br>
+      📱 Follow us on social media (Instagram, Facebook, TikTok)
+    </p>
+  </section>
 
-  <footer>&copy; 2025 Fuzion Hair and Beauty Zone. Website by ChatGPT ✨</footer>
+  <div class="product-slider">
+    <div class="product-slider-track">
+      <img src="https://via.placeholder.com/150" alt="Product 1">
+      <img src="https://via.placeholder.com/150" alt="Product 2">
+      <img src="https://via.placeholder.com/150" alt="Product 3">
+      <img src="https://via.placeholder.com/150" alt="Product 4">
+      <img src="https://via.placeholder.com/150" alt="Product 5">
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Fuzion Hair and Beauty Zone. Website by ChatGPT ✨
+  </footer>
 </body>
 </html>
