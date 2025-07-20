@@ -68,6 +68,32 @@
       box-shadow: 0 8px 16px rgba(183,137,150,0.3);
       background: #e6cbd4;
     }
+    .slider {
+  overflow: hidden;
+  max-width: 100%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  flex: 1 0 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
   </style>
 </head>
 <body>
