@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fuzion Hair and Beauty Zone</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0e8e7, #cbbaba);
+      color: #4a3c3c;
+      line-height: 1.6;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #b799a2cc;
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+      font-weight: 600;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      color: #4a3c3c;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #7a5a61;
+    }
+    header {
+      padding: 3rem 1rem 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-family: 'Georgia', serif;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #7a5a61;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1607082349560-3b76a9d1fa6b?auto=format&fit=crop&w=1050&q=80') no-repeat center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .book-button {
+      background: #b799a2;
+      color: white;
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #b799a2cc;
+      transition: background-color 0.3s ease;
+    }
+    .book-button:hover {
+      background-color: #9e7a83;
+      box-shadow: 0 0 20px #9e7a83cc;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #b799a2;
+      padding-bottom: 0.5rem;
+      color: #5c474a;
+    }
+    #about p {
+      font-size: 1.1rem;
+      color: #6a5558;
+    }
+    #contact p {
+      font-size: 1.1rem;
+      color: #6a5558;
+    }
+    #contact a {
+      color: #b799a2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #8b7c7f;
+      border-top: 1px solid #d7c6c9;
+      background: #f4e9e9;
+    }
+    /* Animations */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Fuzion Hair and Beauty Zone</h1>
+    <p>14 High Street, Stonehouse, GL10 2NA</p>
+  </header>
+
+  <section class="hero">
+    <h2>Beautiful Hair, Relaxed Vibes</h2>
+    <a class="book-button" href="https://www.fresha.com/a/fuzion-hair-beauty-zone-stonehouse-uk-14-high-street-owl3br4j" target="_blank">Book Now</a>
+  </section>
+
+  <main>
+    <section id="about">
+      <h3>About Us</h3>
+      <p>
+        Welcome to Fuzion Hair and Beauty Zone, your local salon in the heart of Stonehouse. We’re passionate about creating beautiful hair in a relaxed, friendly atmosphere. Whether you're after a simple trim, a full colour transformation, or a luxurious hair treatment, our skilled team is here to make you feel amazing.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <p>📍 14 High Street, Stonehouse, GL10 2NA</p>
+      <p>📞 Call or message through our <a href="https://www.fresha.com/a/fuzion-hair-beauty-zone-stonehouse-uk-14-high-street-owl3br4j" target="_blank">Fresha page</a>.</p>
+      <p>📱 Follow us on Instagram, Facebook, TikTok</p>
+    </section>
+  </main>
+
+  <footer>&copy; 2025 Fuzion Hair and Beauty Zone. Website by ChatGPT ✨</footer>
+</body>
+</html>
